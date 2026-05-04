@@ -9,7 +9,7 @@ def slow_print(text, delay=0.03):
 
 def intro():
     slow_print("WELCOME TO ESCAPE HUNT GAME")
-    slow_print("You are locked inside a mysterious room.")
+    slow_print("You are locked inside a mysterious terminal room.")
     slow_print("Solve 3 puzzles to escape.\n")
 
 def puzzle_1():
