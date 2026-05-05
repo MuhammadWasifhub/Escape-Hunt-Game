@@ -1,5 +1,5 @@
 import random
-import t
+import time
 
 def slow_print(text, delay=0.03):
     for char in text:
@@ -7,10 +7,12 @@ def slow_print(text, delay=0.03):
         time.sleep(delay)
     print()
 
+
 def intro():
     slow_print("WELCOME TO ESCAPE HUNT GAME")
     slow_print("You are locked inside a mysterious terminal room.")
     slow_print("Solve 3 puzzles to escape.\n")
+
 
 def puzzle_1():
     slow_print("PUZZLE 1: Number Lock")
@@ -30,6 +32,7 @@ def puzzle_1():
     
     slow_print("Failed puzzle 1. Game Over.")
     return False
+
 
 def puzzle_2():
     slow_print("PUZZLE 2: Word Decode")
@@ -51,11 +54,12 @@ def puzzle_2():
         slow_print("Wrong decode. Game Over.")
         return False
 
+
 def puzzle_3():
     slow_print("FINAL PUZZLE: Secret Password")
     password = "QERA"
     
-    slow_print("Clue: This is the name of a powerful AI assistant system.")
+    slow_print("Clue: This is the name of a powerful AI assistant system.\n")
     
     attempt = input("Enter password: ").upper()
     
@@ -65,6 +69,7 @@ def puzzle_3():
     else:
         slow_print("Wrong password. Locked forever.")
         return False
+
 
 def game():
     intro()
