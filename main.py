@@ -1,5 +1,5 @@
 import random
-import time
+import t
 
 def slow_print(text, delay=0.03):
     for char in text:
