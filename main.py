@@ -1,5 +1,6 @@
 import random
 import time
+import requests
 
 
 def slow_print(text, delay=0.03):
