@@ -21,7 +21,12 @@ def puzzle_1():
     attempts = 3
     
     slow_print("Guess the correct number between 1 and 10")
-    
+    # Add a hint for puzzle 1
+    if num <= 5:
+        slow_print("Hint: The number is 5 or less.")
+    else:
+        slow_print("Hint: The number is greater than 5.")
+
     while attempts > 0:
         guess = int(input("Your guess: "))
         if guess == num:
@@ -60,7 +65,10 @@ def puzzle_3():
     slow_print("FINAL PUZZLE: Secret Password")
     password = "QERA"
     
-    slow_print("Clue: This is the name of a powerful AI assistant system.\n")
+    # The existing clue is already a hint.
+    slow_print("Clue: This is the name of a powerful AI assistant system.")
+    # Adding another hint for clarity
+    slow_print("Hint: It starts with the letter 'Q'.")
     
     attempt = input("Enter password: ").upper()
     
